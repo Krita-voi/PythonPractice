@@ -1,10 +1,15 @@
+def emoji_conv(messg):
+    words = messg.split(" ")
+    emoji = {
+        ":)":"😊",
+        ":(":"😔"
+    }
+    output=""
+    for x in words :
+        output += emoji.get(x,x) + " "
+    return output
 messg = input(">")
-words = messg.split(" ")
-emoji = {
-    ":)":"😊",
-    ":(":"😔"
-}
-output=""
-for x in words :
-    output += emoji.get(x,x) + " "
-print(output) 
+print(emoji_conv(messg))
+
+
+
