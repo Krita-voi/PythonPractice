@@ -3,7 +3,7 @@ class person :
         self.name = name
 
     def talk(self):
-        print (f"Hello!  {self.name}")
+        print (f"Hello! {self.name}")
 
 
 user = person(input("what is your name: "))
